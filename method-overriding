@@ -1,0 +1,18 @@
+class A{
+  public String meth(){
+    return "Invoking method from class A";
+  }
+}
+
+class B extends A{
+  public String meth(){
+    return "Invoking method from class B";
+  }
+}
+
+class Client{
+  public static void main(String[] args){
+    B obj = new B();
+    System.out.println(obj.meth());
+  }
+}
